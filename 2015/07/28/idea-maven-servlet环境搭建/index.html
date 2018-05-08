@@ -5,49 +5,35 @@
   
   <title>IDEA+Maven+Servlet环境搭建 | :D</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言把玩了几天IDEA，从名称上来看就知道它是IDE中的“A货”。
-我是从Android Studio接触到这么一个IDE，除了一些eclipse遗留的习惯问题，我已经彻底爱上了这款IDE。
-今天用其搭建了一个MAVEN的web环境，所得颇多，在此记录一下，也作为这个博客的第一篇文章。
-准备JDK
-Intellij IDEA
-Maven
-Tomcat">
+  <meta name="description" content="前言把玩了几天IDEA，从名称上来看就知道它是IDE中的“A货”。 我是从Android Studio接触到这么一个IDE，除了一些eclipse遗留的习惯问题，我已经彻底爱上了这款IDE。 今天用其搭建了一个MAVEN的web环境，所得颇多，在此记录一下，也作为这个博客的第一篇文章。 准备JDK Intellij IDEA Maven Tomcat">
+<meta name="keywords" content="Java,IDEA,Maven,Servlet">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IDEA+Maven+Servlet环境搭建">
 <meta property="og:url" content="http://yoursite.com/2015/07/28/idea-maven-servlet环境搭建/index.html">
 <meta property="og:site_name" content=":D">
-<meta property="og:description" content="前言把玩了几天IDEA，从名称上来看就知道它是IDE中的“A货”。
-我是从Android Studio接触到这么一个IDE，除了一些eclipse遗留的习惯问题，我已经彻底爱上了这款IDE。
-今天用其搭建了一个MAVEN的web环境，所得颇多，在此记录一下，也作为这个博客的第一篇文章。
-准备JDK
-Intellij IDEA
-Maven
-Tomcat">
-<meta property="og:image" content="/img/1.png">
-<meta property="og:image" content="/img/2.png">
-<meta property="og:image" content="/img/3.png">
-<meta property="og:image" content="/img/4.png">
-<meta property="og:image" content="/img/5.png">
-<meta property="og:image" content="/img/6.png">
-<meta property="og:image" content="/img/7.png">
-<meta property="og:image" content="/img/8.png">
-<meta property="og:image" content="/img/9.png">
-<meta property="og:image" content="/img/10.png">
-<meta property="og:image" content="/img/11.png">
-<meta property="og:image" content="/img/12.png">
-<meta property="og:image" content="/img/13.png">
-<meta property="og:image" content="/img/14.png">
-<meta property="og:image" content="/img/15.png">
-<meta property="og:image" content="/img/16.png">
+<meta property="og:description" content="前言把玩了几天IDEA，从名称上来看就知道它是IDE中的“A货”。 我是从Android Studio接触到这么一个IDE，除了一些eclipse遗留的习惯问题，我已经彻底爱上了这款IDE。 今天用其搭建了一个MAVEN的web环境，所得颇多，在此记录一下，也作为这个博客的第一篇文章。 准备JDK Intellij IDEA Maven Tomcat">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/img/1.png">
+<meta property="og:image" content="http://yoursite.com/img/2.png">
+<meta property="og:image" content="http://yoursite.com/img/3.png">
+<meta property="og:image" content="http://yoursite.com/img/4.png">
+<meta property="og:image" content="http://yoursite.com/img/5.png">
+<meta property="og:image" content="http://yoursite.com/img/6.png">
+<meta property="og:image" content="http://yoursite.com/img/7.png">
+<meta property="og:image" content="http://yoursite.com/img/8.png">
+<meta property="og:image" content="http://yoursite.com/img/9.png">
+<meta property="og:image" content="http://yoursite.com/img/10.png">
+<meta property="og:image" content="http://yoursite.com/img/11.png">
+<meta property="og:image" content="http://yoursite.com/img/12.png">
+<meta property="og:image" content="http://yoursite.com/img/13.png">
+<meta property="og:image" content="http://yoursite.com/img/14.png">
+<meta property="og:image" content="http://yoursite.com/img/15.png">
+<meta property="og:image" content="http://yoursite.com/img/16.png">
+<meta property="og:updated_time" content="2015-07-28T17:08:42.092Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IDEA+Maven+Servlet环境搭建">
-<meta name="twitter:description" content="前言把玩了几天IDEA，从名称上来看就知道它是IDE中的“A货”。
-我是从Android Studio接触到这么一个IDE，除了一些eclipse遗留的习惯问题，我已经彻底爱上了这款IDE。
-今天用其搭建了一个MAVEN的web环境，所得颇多，在此记录一下，也作为这个博客的第一篇文章。
-准备JDK
-Intellij IDEA
-Maven
-Tomcat">
+<meta name="twitter:description" content="前言把玩了几天IDEA，从名称上来看就知道它是IDE中的“A货”。 我是从Android Studio接触到这么一个IDE，除了一些eclipse遗留的习惯问题，我已经彻底爱上了这款IDE。 今天用其搭建了一个MAVEN的web环境，所得颇多，在此记录一下，也作为这个博客的第一篇文章。 准备JDK Intellij IDEA Maven Tomcat">
+<meta name="twitter:image" content="http://yoursite.com/img/1.png">
   
     <link rel="alternative" href="/atom.xml" title=":D" type="application/atom+xml">
   
@@ -55,7 +41,7 @@ Tomcat">
     <link rel="icon" href="/favicon.png">
   
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
   
 
 </head>
@@ -87,7 +73,7 @@ Tomcat">
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="q" value="site:http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
       </div>
     </div>
   </div>
@@ -119,14 +105,14 @@ Tomcat">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前言">前言</h2><p>把玩了几天IDEA，从名称上来看就知道它是IDE中的“A货”。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>把玩了几天IDEA，从名称上来看就知道它是IDE中的“A货”。</p>
 <p>我是从Android Studio接触到这么一个IDE，除了一些eclipse遗留的习惯问题，我已经彻底爱上了这款IDE。</p>
 <p>今天用其搭建了一个MAVEN的web环境，所得颇多，在此记录一下，也作为这个博客的第一篇文章。</p>
-<h2 id="准备">准备</h2><p>JDK</p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>JDK</p>
 <p>Intellij IDEA</p>
 <p>Maven</p>
 <p>Tomcat<br><a id="more"></a></p>
-<h2 id="项目创建">项目创建</h2><h3 id="配置Maven">配置Maven</h3><p>首先运行IDEA，创建一个Maven项目：</p>
+<h2 id="项目创建"><a href="#项目创建" class="headerlink" title="项目创建"></a>项目创建</h2><h3 id="配置Maven"><a href="#配置Maven" class="headerlink" title="配置Maven"></a>配置Maven</h3><p>首先运行IDEA，创建一个Maven项目：</p>
 <p><img src="/img/1.png" alt=""></p>
 <center>图1</center>
 
@@ -150,7 +136,7 @@ Tomcat">
 <center>图6</center>
 
 <p>至此，Maven的配置已经完成。</p>
-<h3 id="配置tomcat">配置tomcat</h3><p>Run —&gt; Edit Configurations,如图7：</p>
+<h3 id="配置tomcat"><a href="#配置tomcat" class="headerlink" title="配置tomcat"></a>配置tomcat</h3><p>Run –&gt; Edit Configurations,如图7：</p>
 <p><img src="/img/7.png" alt=""></p>
 <center>图7</center>
 
@@ -170,7 +156,7 @@ Tomcat">
 <p><img src="/img/11.png" alt=""></p>
 <center>图11</center>
 
-<h2 id="Servlet的引入">Servlet的引入</h2><p>接着，我们来加入Servlet。</p>
+<h2 id="Servlet的引入"><a href="#Servlet的引入" class="headerlink" title="Servlet的引入"></a>Servlet的引入</h2><p>接着，我们来加入Servlet。</p>
 <p>首先在main目录下添加java目录，并将其设为source root，如图12，13：</p>
 <p><img src="/img/12.png" alt=""></p>
 <center>图12</center>
@@ -183,7 +169,7 @@ Tomcat">
 <p>这个类应该继承自HttpServlet，但是HttpServlet在这里会报错，原因是HttpServlet所需的jar包（servlet-api.jar）在tomcat的lib目录下。</p>
 <p>这里有两种比较快速的解决方法。</p>
 <p>第一种是通过maven引入servlet-api.jar的依赖。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">groupId</span>&gt;</span>javax.servlet<span class="tag">&lt;/<span class="title">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">artifactId</span>&gt;</span>servlet-api<span class="tag">&lt;/<span class="title">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">version</span>&gt;</span>2.5<span class="tag">&lt;/<span class="title">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>servlet-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">version</span>&gt;</span>2.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>第二种是引入tomcat下的servlet-api.jar。</p>
 <p>点击项目根目录，按F4进入模块设置，选择Dependencies选项卡，添加tomcat lib目录下的servlet-api.jar文件，Scope选择Provided，如图14：</p>
 <p><img src="/img/14.png" alt=""></p>
@@ -192,15 +178,15 @@ Tomcat">
 
 <p>这里推荐使用第二种方法，保持生产环境与运行环境一致。</p>
 <p>接着完成Hello.java</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="annotation">@WebServlet</span>(<span class="string">"/"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span></span>&#123;</span><br><span class="line">	<span class="annotation">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> </span><br><span class="line">	<span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">		</span><br><span class="line">		req.setAttribute(<span class="string">"hello"</span>,<span class="string">"Hello World!!!"</span>);</span><br><span class="line">		</span><br><span class="line">		req.getRequestDispatcher(<span class="string">"/WEB-INF/index.jsp"</span>).forward(req,resp);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="meta">@WebServlet</span>(<span class="string">"/"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span></span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> </span></span><br><span class="line"><span class="function">	<span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">		</span><br><span class="line">		req.setAttribute(<span class="string">"hello"</span>,<span class="string">"Hello World!!!"</span>);</span><br><span class="line">		</span><br><span class="line">		req.getRequestDispatcher(<span class="string">"/WEB-INF/index.jsp"</span>).forward(req,resp);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>将index.jsp放入WEB-INF目录下，将“Hello World！”换成EL表达式${hello}，运行项目，发现如图15：</p>
 <p><img src="/img/15.png" alt=""></p>
 <center>图15</center>
 
 <p>EL表达式失效，可在jsp页面加上如下语句：</p>
-<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%<span class="annotation">@page</span> isELIgnored=<span class="string">"false"</span> %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%<span class="meta">@page</span> isELIgnored=<span class="string">"false"</span> %&gt;</span><br></pre></td></tr></table></figure>
 <p>也可将web.xml修改如下：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">web-app</span> <span class="attribute">xmlns:xsi</span>=<span class="value">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="attribute">xmlns</span>=<span class="value">"http://java.sun.com/xml/ns/javaee"</span></span><br><span class="line">         <span class="attribute">xsi:schemaLocation</span>=<span class="value">"http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"</span></span><br><span class="line">         <span class="attribute">id</span>=<span class="value">"WebApp_ID"</span> <span class="attribute">version</span>=<span class="value">"3.0"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">display-name</span>&gt;</span>Archetype Created Web Application<span class="tag">&lt;/<span class="title">display-name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">web-app</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">web-app</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="attr">xmlns</span>=<span class="string">"http://java.sun.com/xml/ns/javaee"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"</span></span></span><br><span class="line"><span class="tag">         <span class="attr">id</span>=<span class="string">"WebApp_ID"</span> <span class="attr">version</span>=<span class="string">"3.0"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">display-name</span>&gt;</span>Archetype Created Web Application<span class="tag">&lt;/<span class="name">display-name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">web-app</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>UPDATE classes，刷新页面，如图16：</p>
 <p><img src="/img/16.png" alt=""></p>
 <center>图16</center>
@@ -210,7 +196,7 @@ Tomcat">
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/28/idea-maven-servlet环境搭建/" data-id="cin4pu7j50003fgvih7inqblr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/07/28/idea-maven-servlet环境搭建/" data-id="cjgxr29pb0000hovibafu8k50" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IDEA/">IDEA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Maven/">Maven</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Servlet/">Servlet</a></li></ul>
@@ -220,6 +206,15 @@ Tomcat">
   
     
 <nav id="article-nav">
+  
+    <a href="/2018/05/08/安装配置centos网络/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
   
     <a href="/2015/05/13/终于弄好了/" id="article-nav-older" class="article-nav-link-wrap">
@@ -277,7 +272,7 @@ Tomcat">
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: NaNpx;">Hexo</a><a href="/tags/IDEA/" style="font-size: NaNpx;">IDEA</a><a href="/tags/Java/" style="font-size: NaNpx;">Java</a><a href="/tags/Maven/" style="font-size: NaNpx;">Maven</a><a href="/tags/Servlet/" style="font-size: NaNpx;">Servlet</a>
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/IDEA/" style="font-size: 10px;">IDEA</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/Servlet/" style="font-size: 10px;">Servlet</a>
     </div>
   </div>
 
@@ -286,7 +281,7 @@ Tomcat">
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">July 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -296,6 +291,10 @@ Tomcat">
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/05/08/安装配置centos网络/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2015/07/28/idea-maven-servlet环境搭建/">IDEA+Maven+Servlet环境搭建</a>
@@ -317,7 +316,7 @@ Tomcat">
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 zevilo<br>
+      &copy; 2018 zevilo<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
@@ -335,11 +334,11 @@ Tomcat">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js" type="text/javascript"></script>
+<script src="/js/script.js"></script>
 
   </div>
 </body>
